@@ -1,14 +1,26 @@
-function add(n1: number, n2: number, showResult: boolean, phrase: string) {
-  const result = n1 + n2;
-  if (showResult) {
-    console.log(phrase + result);
-  }
-  return result;
+// Object Types
+
+/*const person: {
+  name: string;
+  age: number;
+} = {
+  name: "Kacper",
+  age: 22,
+};
+*/
+
+// Better Syntax
+const person = {
+  name: "Kacper",
+  age: 22,
+  hobbies: ["music", "manga"],
+};
+
+let favActivity: string[];
+favActivity = ["archery"];
+
+console.log(person);
+
+for (const hobby of person.hobbies) {
+  console.log(hobby);
 }
-
-const number1 = 5; // 5.0
-const number2 = 2.9;
-const printResult = true;
-const resultPhrase = "Result is: ";
-
-add(number1, number2, printResult, resultPhrase);
